@@ -1,0 +1,20 @@
+body{
+	background: #fafafa;
+}
+
+#principal{
+	width: 100%; 
+}
+
+@media (min-width: 640px){
+	#principal{
+		padding-top: 60px;
+	}
+}
+
+@media (max-width: 639px){
+	#principal{
+		padding-top: 0px;
+	}
+}
+

@@ -1,0 +1,32 @@
+#cargarMas{
+	width: 200px;
+	background: #3897f0;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    color: white;
+    font-family: GothamMedium;
+    text-align: center;
+    padding: 7px 0px;
+    margin: 0 auto; 
+    left: 0; 
+    right: 0;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 734px){
+	#cargarMas{
+		width: 93%;
+		margin-top: 15px;
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 735px){
+	#cargarMas{
+		width: 200px;
+		font-size: 18px;
+	}
+}

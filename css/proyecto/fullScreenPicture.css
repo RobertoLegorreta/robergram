@@ -1,0 +1,358 @@
+#centraTodo{
+	background: rgba(0,0,0, .8); 
+	display: flex; 
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row; 
+	flex-wrap: nowrap;
+	z-index: 3;
+	width: 100%; 
+	min-height: 100vh;
+	justify-content: center;
+}
+
+#fotoYComentarios{
+	display: flex; 
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row; 
+	flex-wrap: nowrap;
+	z-index: 10000000; /*PARA QUE APAREZCA SOBRE DIV CERRAR*/
+}
+
+/*ANCHO QUERIES*/
+@media (min-width: 1015px){
+	#fotoYComentarios{
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 1015px){
+	#fotoYComentarios{
+		width: 100%;
+	}
+}
+
+/*ESTAMOS CON ESTE*/
+/*ESTAMOS CON ESTE*/
+/*ESTAMOS CON ESTE*/
+/*ESTAMOS CON ESTE*/
+/*ESTAMOS CON ESTE*/
+
+@media(max-width: 735px){
+	#comentariosFullScreen{
+		width: 100%; 
+		height: 500%; /*Tengo que eliminar esto*/
+		padding: 0;
+	}
+
+	#encabezadoComentariosFullScreen{
+		height: 60px;
+	}
+
+	#fotoEncabezadoComentariosFullScreen{
+		margin-right: 15px;
+		margin-left: 15px;
+		width: 30px; 
+		height: 30px;
+	}
+
+	#fotoFullScreen{
+		width: 100%; 
+	}
+
+	#totalComentariosFullScreen{
+		padding: 0 15px;
+	}
+
+	#likesYDate{
+		padding-left: 15px;
+		padding-bottom: 10px;
+	}
+
+	.anadirComentariosPublicacion{
+		margin: 0 15px; 
+		border-top: 1px solid #dbdbdb;
+	}
+
+}
+
+@media(min-width: 736px){
+	#fotoYComentarios{
+		height: 600px;
+	}
+
+	#comentariosFullScreen{
+		width: 325px; 
+		height: 100%; 
+		padding: 0 24px;
+	}
+
+	#encabezadoComentariosFullScreen{
+		height: 60px;
+	}
+
+	#fotoEncabezadoComentariosFullScreen{
+		margin-right: 15px;
+		width: 40px; 
+		height: 40px;
+	}
+
+	#fotoFullScreen{
+		width: 600px; 
+		height: 100%; 
+	}
+
+	#fotoFullScreen img{
+		height: 100%;	
+	}
+
+	#totalComentariosFullScreen{
+		flex-grow: 1;
+		flex-basis: 0;
+		overflow: scroll;
+	}
+
+	#likesYDate{
+		border-top: 1px solid #dbdbdb;
+		border-bottom: 1px solid #dbdbdb;
+		height: 75px;
+	}
+
+}
+/*ESTAMOS CON ESTE*/
+/*ESTAMOS CON ESTE*/
+/*ESTAMOS CON ESTE*/
+/*ESTAMOS CON ESTE*/
+/*ESTAMOS CON ESTE*/
+
+@media (max-width: 480px){
+	.flechas{
+		display: none;
+	}
+}
+
+@media (min-width: 481px){
+	.flechas{
+		display: flex; 
+		display: -webkit-flex;
+		display: -moz-flex;
+	}
+
+	#fotoYComentarios{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+
+
+/*ALTURA QUERIES*/
+@media (max-height: 700px){
+	#centraTodo{
+		position: absolute;
+	}
+
+	#fotoYComentarios{
+		align-self: flex-start;
+	}
+}
+
+@media (min-height: 701px){
+	#centraTodo{
+		position: fixed;
+	}
+
+	#fotoYComentarios{
+		align-self: center;
+		margin-top: 0; 
+		margin-bottom: 0;
+	}
+}
+
+/*FLECHAS*/
+.flechas{
+	width: 45px;
+	min-width: 45px;
+	height: 100v; 
+	flex-direction: column; 
+	flex-wrap: nowrap;	
+	justify-content: center;
+	opacity: .8;
+}
+
+#flechaIzquierda img{
+	width: 100%; 
+}
+
+#flechaDerecha img{
+	width: 100%; 
+}
+
+
+/*FOTO*/
+#fotoFullScreen{
+	background: black;
+	object-fit: contain;
+	object-position: center;
+}
+
+#fotoFullScreen img{
+	width: 100%; 
+	object-fit: contain;
+	object-position: center;
+	vertical-align: top;
+}
+
+/*COMENTARIOS*/
+#comentariosFullScreen{
+	min-width: 325px;
+	background: white;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	display: flex; 
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: column; 
+	flex-wrap: nowrap;
+}
+
+#encabezadoComentariosFullScreen{
+	width: 100%; 
+	border-bottom: 1px solid #dbdbdb;
+	display: flex; 
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row; 
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+#fotoEncabezadoComentariosFullScreen{ 
+	object-position: center; 
+	object-fit: cover; 
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+	-ms-border-radius: 100px;
+}
+
+#fotoEncabezadoComentariosFullScreen img{
+	width: 100%; 
+	height: 100%; 
+	object-position: center; 
+	object-fit: cover; 
+	vertical-align: top; 
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+	-ms-border-radius: 100px;
+}
+
+#proyectoComentariosFullScreen{
+	font-family: GothamMedium; 
+	font-size: 15px; 
+	color: #262626;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+/*TODOS LOS COMENTARIOS DEL POST*/
+#totalComentariosFullScreen{
+	padding-top: 10px;
+}
+
+.comentariosPublicacion{
+	width: 100%;  
+	margin-top: 0;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	font-family: GothamMedium;
+	font-size: 15px;
+	color: #262626;
+}
+
+.comentariosPublicacion span{
+	font-family: GothamBook;
+}
+
+/*CANTIDAD LIKES Y FECHA PUBLICACIÓN*/
+#likesYDate{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+#cantidadMeGusta{
+	font-family: GothamMedium; 
+	font-size: 16px; 
+	color: #262626;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+#fechaPost{
+	font-family: GothamBook; 
+	font-size: 11px;
+	color: #999;
+	margin: 0;
+}
+
+/*AÑADIR COMENTARIOS A PUBLICACIÓN*/
+.anadirComentariosPublicacion{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.figureMeGusta{
+	width: 25px; 
+	height: 25px;
+	margin: 0;
+	margin-right: 15px;
+}
+
+.figureMeGusta img{
+	width: 100%; 
+	height: 100%; 
+	vertical-align: top;
+}
+
+.inputComentarPublicacion{
+	background: none;
+	border: none;
+	outline: none;
+	font-family: GothamMedium;
+	color: #262626;
+	font-size: 15px;
+	text-align: left;
+	flex-grow: 1;
+	padding-top: 22px; 
+	padding-bottom: 22px;
+}
+
+#divCerrar{
+	width: 100%; 
+	height: 100vh;
+	position: fixed;
+}
+
+
+
+
+
+

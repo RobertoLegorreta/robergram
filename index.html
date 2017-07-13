@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Robergram</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="objetos/generales/favicon.png"/>
+	<!-- Favicon -->
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="css/generales/fontFace.css">
+	<link rel="stylesheet" type="text/css" href="css/generales/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/generales/encabezado.css">
+	<link rel="stylesheet" type="text/css" href="css/generales/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/index/principal.css">
+	<link rel="stylesheet" type="text/css" href="css/index/sugerencias.css">
+	<link rel="stylesheet" type="text/css" href="css/index/publicaciones.css">
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="js/generales/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+	<script type="text/javascript" src="js/index/index.js"></script>
+	<script type="text/javascript" src="js/index/proyectosDesarrollador.js"></script>
+	<script type="text/javascript" src="js/index/publicaciones.js"></script>
+	<script type="text/javascript" src="js/generales/meGustaPublicaciones.js"></script>
+	<script type="text/javascript" src="js/generales/comentarios.js"></script>
+	<script type="text/javascript" src="js/index/goToProject.js"></script>
+	<script type="text/javascript" src="js/generales/manitas.js"></script>
+
+
+</head>
+<body>
+	<div id="barraNavegacion">
+		<div id="encapsulaNavegacion">
+			<!-- Alineado a la izquierda -->
+			<div id="encapsulaLogoNombre" class="mismoAnchoParaCentrar">
+				<figure class="figureLogo">
+					<img src="objetos/generales/logo.png">
+				</figure>
+				<p id="nombreWebApp">Robertgram</p>
+			</div>
+			<!-- Centrado -->
+ 			<!-- <input id="inputBuscar" type="text" name="" placeholder="Buscar proyecto"> -->
+ 			<!-- Alineado a la derecha -->
+ 			<div id="flexDerechoNavegacion">
+ 				<a href="https://www.linkedin.com/in/rlegorreta"><div id="linkedin" class="perfilExplorar">
+				</div></a>
+				<a href="https://www.facebook.com/RLegorretaMurillo"><div id="facebook" class="perfilExplorar">
+				</div></a>
+				<a href="https://www.twitter.com/rlegorreta"><div id="twitter" class="perfilExplorar">
+ 				</div></a>
+ 			</div>
+ 		</div> <!-- Fin de #encapsulaNavegacion -->
+	</div> <!-- Fin de barraNavegacion -->
+
+	<div id="principal">
+		
+	</div>
+	<p id="footer">TODOS LOS DERECHOS RESERVADOS<br><span>© 2017 ROBERTO LEGORRETA</span></p>
+</body>
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBhXN7js8w5oMjmr90ito8XdmMSJQBS9o8",
+    authDomain: "robergram-356a6.firebaseapp.com",
+    databaseURL: "https://robergram-356a6.firebaseio.com",
+    projectId: "robergram-356a6",
+    storageBucket: "robergram-356a6.appspot.com",
+    messagingSenderId: "344227074943"
+  };
+  firebase.initializeApp(config);
+</script>
+</html>

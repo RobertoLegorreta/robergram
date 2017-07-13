@@ -1,0 +1,111 @@
+#fotosProyecto{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: column;
+	flex-wrap: nowrap;	
+}
+
+.rowsFotos{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	margin: 0 auto;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row; 
+	justify-content: space-between;
+}
+
+@media (max-width: 934px){
+	.rowsFotos{
+		width: 100%;
+	}
+}
+
+@media (min-width: 975px){
+	.rowsFotos{
+		width: 935px;
+	}
+}
+
+@media (max-width: 734px){
+	.rowsFotos{
+		margin-bottom: 3px;
+	}
+
+	.columnaCentrada{
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+}
+
+@media (min-width: 735px){
+	.rowsFotos{
+		margin-bottom: 28px;
+	}
+
+	.columnaCentrada{
+		margin-left: 28px;
+		margin-right: 28px;
+	}
+
+}
+
+
+.columna{
+	background: gray;
+	flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+}
+
+.columna img{
+	object-fit: cover; 
+	object-position: center; 
+	width: 100%; 
+	height: 100%;
+	vertical-align: top; 
+}
+
+#columna3{
+	background: none;
+}
+
+#columna2{
+	background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

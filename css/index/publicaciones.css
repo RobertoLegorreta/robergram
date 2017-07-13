@@ -1,0 +1,291 @@
+.publicaciones{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	margin: 0 auto;
+	background: white;
+}
+
+
+/*Encabezado*/
+.encabezadoPublicacion{
+	width: 100%;  
+	height: 65px; /* Es probable que lo quite*/
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.figureQuienPublica{
+	border: 1px solid #dbdbdb;
+	width: 30px;
+	height: 30px;
+	margin-left: 15px; 
+	margin-right: 15px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+	-ms-border-radius: 100px;
+}
+
+.figureQuienPublica img{
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+	-ms-border-radius: 100px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.quienYDondePublicacion{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.quienPublica{
+	margin: 0;
+	font-family: GothamMedium;
+	font-size: 15px;
+	color: #262626;
+}
+
+.dondePublica{
+	margin: 0;
+	font-family: GothamBook;
+	font-size: 14px;
+	color: #262626;
+}
+
+.fechaPublicacion{
+	flex-grow: 1;
+	text-align: right;
+	padding-right: 15px;
+	margin: 0;
+	font-family: GothamBook;
+	font-size: 15px;
+	color: #999;
+}
+
+
+/*Foto publicación*/
+.fotoPublicacion{
+	width: 100%;  
+}
+
+.figureFotoPublicacion{
+	width: 100%; 
+	margin: 0;
+}
+
+.figureFotoPublicacion img{
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	vertical-align: top;
+}
+
+/*Me gusta de publicación*/
+.meGustaPublicacion{
+	width: 100%; 
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.totalDeMeGusta{
+	margin-left: 15px;
+	font-family: GothamMedium;
+	font-size: 15px;
+	color: #262626;
+}
+
+/*Comentarios de publicación*/
+.comentariosPublicacion{
+	width: 100%;  
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	font-family: GothamMedium;
+	font-size: 16px;
+	color: #262626;
+}
+
+.comentariosPublicacion span{
+	font-family: GothamBook;
+}
+
+/*Añadir comentarios a publicación*/
+.anadirComentariosPublicacion{
+	margin-left: 15px; 
+	margin-right: 15px;
+	margin-top: 15px;
+	border-top: 1px solid #dbdbdb;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.figureMeGusta{
+	margin: 0;
+	margin-right: 15px;
+}
+
+.figureMeGusta img{
+	width: 100%; 
+	height: 100%; 
+	vertical-align: top;
+}
+
+.inputComentarPublicacion{
+	background: none;
+	border: none;
+	outline: none;
+	font-family: GothamLight;
+	color: #262626;
+	font-size: 16px;
+	text-align: left;
+	flex-grow: 1;
+	padding-top: 10px; 
+	padding-bottom: 10px;
+}
+
+.figureConfiguracionPublicacion{
+	width: 22px;
+	height: 22px;
+	margin: 0;
+	margin-left: 15px;
+	text-align: right;
+}
+
+.figureConfiguracionPublicacion img{
+	width: 100%;
+	height: 100%; 
+	vertical-align: top;
+}
+
+@media (max-width: 735px){
+	.publicaciones{
+		margin-bottom: 15px;
+	}
+
+	.totalDeMeGusta{
+		margin-top: 10px; 
+		margin-bottom: 10px;
+	}
+
+	.comentariosPublicacion{
+		margin-bottom: 4px;
+	}
+
+	.anadirComentariosPublicacion{
+		height: 50px; 
+	}
+
+	.figureMeGusta{
+		width: 18px;
+		height: 18px;
+	}
+
+}
+
+@media (min-width: 736px){
+	.publicaciones{
+		margin-bottom: 60px;
+	}
+
+	.totalDeMeGusta{
+		margin-top: 14px; 
+		margin-bottom: 14px;
+	}
+
+	.comentariosPublicacion{
+		margin-bottom: 8px;
+	}
+
+	.anadirComentariosPublicacion{
+		height: 70px; 
+	}
+
+	.figureMeGusta{
+		width: 22px;
+		height: 22px;
+	}
+}
+
+@media (max-width: 639px){
+	.publicaciones{
+		background: #fafafa;
+		border: none;	
+		border-radius: none;
+		-webkit-border-radius: none;
+		-moz-border-radius: none;
+		-o-border-radius: none;
+		-ms-border-radius: none;
+	}
+
+	.encabezadoPublicacion{
+		border-bottom: 1px solid #f2f2f2;
+	}
+
+}
+
+@media (min-width: 640px){
+	.publicaciones{
+		background: white;
+		border: 1px solid #dbdbdb;	
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		-o-border-radius: 3px;
+		-ms-border-radius: 3px;
+	}
+
+	.encabezadoPublicacion{
+		border-bottom: 1px solid #dbdbdb;
+	}
+
+}
+
+@media (max-width: 599){
+	.publicaciones{
+		width: 100%;
+	}
+}
+
+
+@media (min-width: 600px){
+	.publicaciones{
+		width: 600px;
+	}
+}
+
+
+
+
+
+
+
