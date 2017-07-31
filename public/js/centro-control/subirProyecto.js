@@ -1,12 +1,12 @@
 $(document).on('ready',function(){
 
 	//EVENT LISTENER CUANDO SE HACE CLICK EN EL BOTÓN SUBMIT
-	var form = document.getElementById('subirProyecto');
-	if (form.attachEvent) {
-	    form.attachEvent("submit", processForm);
-	} else {
-	    form.addEventListener("submit", processForm);
-	}
+	// var form = document.getElementById('subirProyecto');
+	// if (form.attachEvent) {
+	//     form.attachEvent("submit", processForm);
+	// } else {
+	//     form.addEventListener("submit", processForm);
+	// }
 
 	//EVENT LISTENER CUANDO SE HACE CLICK EN EL BOTÓN SUBMIT
 	var formPost = document.getElementById('subirPost');
@@ -109,61 +109,61 @@ function subirPost(e) {
 
 
 
-function processForm(e) {
-    if (e.preventDefault) e.preventDefault();
+// function processForm(e) {
+//     if (e.preventDefault) e.preventDefault();
 
 
-    //Jalar valores de formulario
-    var nomProyecto = $('#nombreProyecto').val();
-    var dueProyecto = $('#duenoProyecto').val();
-    var webProyecto = $('#websiteProyecto').val();
-    var desProyecto = $('#descripcionProyecto').val();
+//     //Jalar valores de formulario
+//     var nomProyecto = $('#nombreProyecto').val();
+//     var dueProyecto = $('#duenoProyecto').val();
+//     var webProyecto = $('#websiteProyecto').val();
+//     var desProyecto = $('#descripcionProyecto').val();
 
-	var newProjectKey = firebase.database().ref().child('proyectos').push().key;
+// 	var newProjectKey = firebase.database().ref().child('proyectos').push().key;
 
-	var project = {
-	    nombreProyecto: nomProyecto,
-	    duenoProyecto: dueProyecto,
-	    websiteProyecto : webProyecto,
-	    descripcionProyecto : desProyecto,
-	    cantidadComentarios: 0
-	 };
+// 	var project = {
+// 	    nombreProyecto: nomProyecto,
+// 	    duenoProyecto: dueProyecto,
+// 	    websiteProyecto : webProyecto,
+// 	    descripcionProyecto : desProyecto,
+// 	    cantidadComentarios: 0
+// 	 };
 
-	firebase.database().ref().child('proyectos/' + newProjectKey).update(project, function(error){
-		if(error){
-			console.log('No se pudo guardar la información' + error);
-		}else{
-			console.log('Awebooo, lo subimos');
+// 	firebase.database().ref().child('proyectos/' + newProjectKey).update(project, function(error){
+// 		if(error){
+// 			console.log('No se pudo guardar la información' + error);
+// 		}else{
+// 			console.log('Awebooo, lo subimos');
 
-			var inputElement = document.getElementById('fotoProyecto');
-			var file = inputElement.files;
+// 			var inputElement = document.getElementById('fotoProyecto');
+// 			var file = inputElement.files;
 
-			//Crear referencia al storage de fotoPerfilProyecto
-			var fotoProyectoRef = firebase.storage().ref().child('profilePictures/' + newProjectKey + '/' + file[0].name);
+// 			//Crear referencia al storage de fotoPerfilProyecto
+// 			var fotoProyectoRef = firebase.storage().ref().child('profilePictures/' + newProjectKey + '/' + file[0].name);
 
-			var uploadTask = fotoProyectoRef.put(file[0]);
+// 			var uploadTask = fotoProyectoRef.put(file[0]);
 
-			//Observamos la subida
-			uploadTask.on('state_changed', function(snapshot){
-			  // Observe state change events such as progress, pause, and resume
-			  // See below for more detail
-			}, function(error) {
-				console.log(error);
-			}, function() {
-				console.log('AWEBOOO SE SUBIÓ LA IMAGEN');
-				var downloadURL = uploadTask.snapshot.downloadURL;
+// 			//Observamos la subida
+// 			uploadTask.on('state_changed', function(snapshot){
+// 			  // Observe state change events such as progress, pause, and resume
+// 			  // See below for more detail
+// 			}, function(error) {
+// 				console.log(error);
+// 			}, function() {
+// 				console.log('AWEBOOO SE SUBIÓ LA IMAGEN');
+// 				var downloadURL = uploadTask.snapshot.downloadURL;
 
-				firebase.database().ref().child('proyectos/' + newProjectKey).update({
-					profilePictureURL: downloadURL
-				});
-			});//Fin de escuchar los cambios de subida de imagen
+// 				firebase.database().ref().child('proyectos/' + newProjectKey).update({
+// 					profilePictureURL: downloadURL
+// 				});
+// 			});//Fin de escuchar los cambios de subida de imagen
 
-		}//Fin del else
-	});
+// 		}//Fin del else
+// 	});
 
-    // You must return false to prevent the default form behavior
-    return false;
-}
+//     // You must return false to prevent the default form behavior
+//     return false;
+// }
 
 
 

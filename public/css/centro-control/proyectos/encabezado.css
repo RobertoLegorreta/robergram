@@ -1,0 +1,66 @@
+#encabezado{
+	width: 100%; 
+	background: white; 
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#centrado{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin: 20px 0 20px 0;
+}
+
+#figureLogo{
+	width: 30px; 
+	height: 30px;
+	margin: 0;
+	margin-right: 18px;
+}
+
+#figureLogo img{
+	width: 100%; 
+}
+
+#robergram{
+	font-family: Instagram; 
+	font-size: 30px;
+	color: #262626;
+	border-left: 1px solid #262626;
+	padding-top: 2px;
+	margin: 0;
+	padding-left: 18px;
+}
+
+#cerrarSesion{
+	cursor: pointer;
+	width: 25px; 
+	height: 25px; 
+	padding: 10px;
+	margin: 0;
+	margin-right: 60px;
+}
+
+#cerrarSesion img{
+	width: 100%; 
+	height: 100%; 
+	vertical-align: top; 
+}
+
+#rellenoIzquierdo{
+	width: 25px; 
+	height: 25px; 
+	margin: 0;
+	margin-left: 70px;
+}
+
+

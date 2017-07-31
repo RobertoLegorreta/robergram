@@ -37,12 +37,13 @@ function proyectosDesarrollados(){
 		var referenciaStorage = firebase.database().ref('proyectos/' + data.key + "/profilePictureURL");
 
 		referenciaStorage.once('value').then(function(snapshot){
-			
-			firebase.storage().refFromURL(snapshot.val()).getDownloadURL().then(function(url) {
-				imagenPersonaSugeridaFigure.setAttribute('src', url);
-			});
-
+			if(snapshot.val() != null){
+				firebase.storage().refFromURL(snapshot.val()).getDownloadURL().then(function(url) {
+					imagenPersonaSugeridaFigure.setAttribute('src', url);
+				});
+			}
 		});
+
 		personaSugeridaFigure.appendChild(imagenPersonaSugeridaFigure);
 
 		var personaSugerida = document.createElement('div');
