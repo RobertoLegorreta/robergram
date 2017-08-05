@@ -1,11 +1,12 @@
-#pantallaAgregarProyecto{
+#pantallaAgregarEntrada{
 	position: fixed;
+	z-index: 2;
 	width: 100%; 
 	height: 100vh; 
-	background: rgba(0,0,0,.75);
+	background: rgba(0,0,0,.75);	
 }
 
-#centraContenidoAgregarProyecto{
+#centraContenidoAgregarEntrada{
 	width: 390px; 
 	background: white; 
 	margin: 0 auto; 
@@ -20,16 +21,10 @@
 
 #subirFoto{
 	position: relative;
-	margin: 35px 0 35px 0;
-	width: 100px;
-	height: 100px; 
-	border-radius: 100px; 
-	-webkit-border-radius: 100px; 
-	-moz-border-radius: 100px; 
-	-o-border-radius: 100px; 
-	-ms-border-radius: 100px;
-	background: white;
-	border: 1px solid #D0D0D0; 
+	margin: 15px 0 0 0;
+	width: 360px;
+	height: 360px; 
+	background: #F5F5F5;
 	display: flex; 
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -47,71 +42,82 @@
 	object-fit: cover;
 	object-position: center;
 	vertical-align: top; 
-	border-radius: 100px; 
-	-webkit-border-radius: 100px; 
-	-moz-border-radius: 100px; 
-	-o-border-radius: 100px; 
-	-ms-border-radius: 100px;
 	width: 100%; 
 	height: 100%;
 }
 
-#subirFoto input{
-	cursor: pointer;
-	padding: 0;
-	position: absolute;
-	top: -25px;
-	width: 100px; 
-	height: 125px;
+#file{
+	width: 0.1px;
+	height: 0.1px;
 	opacity: 0;
-	background: pink;
-	border-radius: 100px; 
-	-webkit-border-radius: 100px; 
-	-moz-border-radius: 100px; 
-	-o-border-radius: 100px; 
-	-ms-border-radius: 100px;
-
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
 }
 
-#subirFoto input label{
+#label{
+	width: 100%; 
+	height: 100%; 
+	position: absolute;
 	cursor: pointer;
 }
 
-#centraContenidoAgregarProyecto input, #centraContenidoAgregarProyecto textarea{
-	width: 93%; 
-	margin: 0 auto 15px auto; 
-	padding: 12px 15px; 
+#primerComentario{
+	width: 360px; 
+	height: 160px;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
-	background: rgba(83,83,83,.03);
-	border: none;
+	border: 1px solid #F5F5F5;
 	outline: none;
 	font-family: GothamBook; 
 	font-size: 15px; 
-	color: #535353;
-}
-
-#centraContenidoAgregarProyecto textarea{
-	height: 190px !important;
+	color: #6D6E72;
+	padding: 10px;
 	resize: none;
+	margin: 15px auto;
 }
 
 #enviar{
+	margin: 0 0 15px 0;
+	width: 360px; 
 	cursor: pointer;
-	background: #3897F0 !important;
-	font-family: GothamBlack !important; 
+	background: #3897F0;
+	font-family: GothamBlack; 
 	font-size: 15px;
-	color: white !important;
+	color: white;
 	height: 48px; 
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-o-border-radius: 3px;
 	-ms-border-radius: 3px;
+	outline: none;
+	border: none;
 }
+
+#modificarEntrada{
+	margin: 0 0 15px 0;
+	width: 360px; 
+	cursor: pointer;
+	background: #3897F0;
+	font-family: GothamBlack; 
+	font-size: 15px;
+	color: white;
+	height: 48px; 
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	outline: none;
+	border: none;
+}
+
+
+
 
 
 
@@ -131,11 +137,6 @@
 ::-moz-placeholder{
 	color: #D0D0D0;
 }
-
-
-
-
-
 
 
 

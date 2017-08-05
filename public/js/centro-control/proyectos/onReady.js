@@ -14,5 +14,13 @@ $(document).on('ready', function(){
 		subirProyecto();
 	});
 
+	$(document).on('click', '.proyectoDB .imagenProyecto', function(){
+		localStorage.setItem('proyectoSeleccionado', $(this).parent().attr('id'));
+		location.href = 'proyectoSeleccionado.html';
+	});
 
+	$(document).on('click', '.proyectoDB .nombreProyecto', function(){
+		localStorage.setItem('proyectoSeleccionado', $(this).parent().attr('id'));
+		location.href = 'proyectoSeleccionado.html';
+	});
 });
