@@ -57,6 +57,7 @@
 }
 
 .personaSugeridaFigure{
+	cursor: pointer;
 	border: 1px solid #dbdbdb;
 	border-radius: 100px;
 	-webkit-border-radius: 100px;
@@ -93,6 +94,7 @@
 }
 
 .personaSugerida p{
+	cursor: pointer;
 	margin: 0;
 }
 
@@ -110,6 +112,7 @@
 }
 
 .botonSeguirSugerido{
+	cursor: pointer;
 	min-width: 82px;
 	margin: 0;
 	background: #3897f0;

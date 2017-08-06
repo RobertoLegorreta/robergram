@@ -23,6 +23,7 @@
 }
 
 #encapsulaLogoNombre{
+	cursor: pointer;
 	width: 240px;
 	display: flex;
 	display: -webkit-flex;
@@ -124,6 +125,7 @@
 }
 
 #linkedin{
+	cursor: pointer;
 	background: url('../../objetos/generales/linkedin.png');
 	background-size: 20px 20px;
 }
@@ -134,6 +136,7 @@
 }
 
 #facebook{
+	cursor: pointer;
 	background: url('../../objetos/generales/facebook.png');
 	background-size: 20px 20px;
 }
@@ -144,6 +147,7 @@
 }
 
 #twitter{
+	cursor: pointer;
 	background: url('../../objetos/generales/twitter.png');
 	background-size: 20px 20px;
 }

@@ -144,6 +144,7 @@
 }
 
 #webProyecto{
+	cursor: pointer;
 	min-width: 82px;
 	margin: 0;
 	background: #3897f0;

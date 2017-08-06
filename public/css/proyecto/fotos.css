@@ -57,6 +57,7 @@
 
 
 .columna{
+	cursor: pointer;
 	background: gray;
 	flex-grow: 1;
     flex-basis: 0;
@@ -72,10 +73,12 @@
 }
 
 #columna3{
+	cursor: auto;
 	background: none;
 }
 
 #columna2{
+	cursor: auto;
 	background: none;
 }
 

@@ -181,10 +181,12 @@
 }
 
 #flechaIzquierda img{
+	cursor: pointer;
 	width: 100%; 
 }
 
 #flechaDerecha img{
+	cursor: pointer;
 	width: 100%; 
 }
 
@@ -231,6 +233,7 @@
 }
 
 #fotoEncabezadoComentariosFullScreen{ 
+	cursor: pointer;
 	object-position: center; 
 	object-fit: cover; 
 	border-radius: 100px;
@@ -254,6 +257,7 @@
 }
 
 #proyectoComentariosFullScreen{
+	cursor: pointer;
 	font-family: GothamMedium; 
 	font-size: 15px; 
 	color: #262626;
@@ -303,6 +307,7 @@
 }
 
 #fechaPost{
+	cursor: pointer;
 	font-family: GothamBook; 
 	font-size: 11px;
 	color: #999;
@@ -320,6 +325,7 @@
 }
 
 .figureMeGusta{
+	cursor: pointer;
 	width: 25px; 
 	height: 25px;
 	margin: 0;
