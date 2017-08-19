@@ -61,6 +61,7 @@ function generarFotoFullScreen(post){
 	comentariosFullScreen.appendChild(totalComentariosFullScreen);
 
 	firebase.database().ref('entradas/comentarios/' + post.key).on('child_added', function(data){
+		console.log('Todos los comentarios se cargan de forma inicial solo una vez, al generar la fotoFullScreen');
 		var comentariosPublicacion = document.createElement('p');
 		comentariosPublicacion.setAttribute('class', 'comentariosPublicacion');
 		totalComentariosFullScreen.appendChild(comentariosPublicacion);
