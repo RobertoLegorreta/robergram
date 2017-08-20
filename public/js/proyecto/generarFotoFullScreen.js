@@ -87,7 +87,7 @@ function generarFotoFullScreen(post){
 	var textoSpanCantidadMeGusta = document.createTextNode(''); 
 	spanCantidadMeGusta.appendChild(textoSpanCantidadMeGusta);
 	$(spanCantidadMeGusta).text(post.val().likes);
-	var textoCantidadMeGusta = document.createTextNode(' likes');
+	var textoCantidadMeGusta = document.createTextNode(' me gusta');
 	cantidadMeGusta.appendChild(textoCantidadMeGusta);
 
 	var fechaPost = document.createElement('p');
